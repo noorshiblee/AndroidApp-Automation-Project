@@ -1,0 +1,38 @@
+install appium from here:
+http://www.seleniumeasy.com/appium-tutorials/install-appium-on-windows-step-by-step
+
+install maven from here:
+https://www.mkyong.com/maven/how-to-install-maven-in-windows/
+
+Steps to start test:
+	1. open the project in eclipse or any editor.
+	2. keep your application apk file in AndroidApplicationPorject > resources folder.
+	2. go to AndroidApplicationPorject > config and open setting.conf file. Write your apk name in appApk for ex: appApk=testApplication.apk
+	3. give device name and udid information also.
+	4. start the appium for android application test.
+	5. go to AndroidApplicationPorject > src/main/java > com.androidautomationproject.main 
+	6. right click on  Main.java and click on Run As > Java Application.
+
+
+Project Information:
+- All information is located inside src/main/java 
+- com.androidautomationproject.main consists the Main.java class to run the automation test.
+- com.androidautomationproject.test consists all the information related with test case or test suite. You can customize it according to your own.
+- com.androidautomationproject.locator consists the all element locator of application pages.
+- com.androidautomationproject.util contain all the helper function needed for the project.
+
+
+AndroidApplicationPorject > resources folder folder: 
+- keep your application apk file here.
+
+AndroidApplicationPorject > config folder:
+- IN AndroidApplicationPorject > config > setting.conf file, input some basic data according to your purpose. For ex: your apk file name in 'appApk' variable. This data is 
+read through AndroidApplicationPorject > src/main/java > com.androidautomationproject.util > propertySettings.java file.
+- In testng.xml, input which test category and which test cases you want to run.
+ 
+ AndroidApplicationPorject > extentreort:
+ -after successfully completing your execution, an html report will be generated here followed by execution timestamp.
+ 
+ AndroidApplicationPorject > pom.xml consists all the necessary libraries for the project.
+ 
+ Debug the project for explore, customize the project as your will and enjoy automation testing.
